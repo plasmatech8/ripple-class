@@ -21,14 +21,14 @@ TODO: package
 </div>
 
 <h2>Light</h2>
-<p>Uses <code>--ripple-light</code></p>
+<p>Use the <code>ripple-light</code> class for the <code>--ripple-light</code> color</p>
 <div class="example">
 	<pre>{`<button class="ripple ripple-light">Click Me!</button>`}</pre>
 	<div class="center"><button class="ripple">Click Me!</button></div>
 </div>
 
 <h2>Dark</h2>
-<p>Uses <code>--ripple-dark</code></p>
+<p>Use the <code>ripple-dark</code> class for the <code>--ripple-dark</code> color</p>
 <div class="example">
 	<pre>{`<button class="ripple ripple-dark">Click Me!</button>`}</pre>
 	<div class="center">
