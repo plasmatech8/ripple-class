@@ -12,14 +12,23 @@ TODO: package
 	<pre>{`import "ripple-class";`}</pre>
 </strike>
 
-<h2>White</h2>
-<p>The default ripple is white.</p>
+<h2>Default</h2>
+<p>You can change the defaut color by setting the <code>--ripple-color</code> CSS variable.</p>
+<p>The default ripple color is set to <code>--ripple-light</code>.</p>
 <div class="example">
 	<pre>{`<button class="ripple">Click Me!</button>`}</pre>
 	<div class="center"><button class="ripple">Click Me!</button></div>
 </div>
 
+<h2>Light</h2>
+<p>Uses <code>--ripple-light</code></p>
+<div class="example">
+	<pre>{`<button class="ripple ripple-light">Click Me!</button>`}</pre>
+	<div class="center"><button class="ripple">Click Me!</button></div>
+</div>
+
 <h2>Dark</h2>
+<p>Uses <code>--ripple-dark</code></p>
 <div class="example">
 	<pre>{`<button class="ripple ripple-dark">Click Me!</button>`}</pre>
 	<div class="center">
@@ -28,7 +37,7 @@ TODO: package
 </div>
 
 <h2>Custom</h2>
-<p>Make a custom ripple color by using the <code>--ripple-color</code> CSS variable.</p>
+<p>Make a custom ripple color by changing the <code>--ripple-color</code> CSS variable.</p>
 <p>Below is a red ripple that starts with 50% transparency.</p>
 <div class="example">
 	<pre>{`<button class="ripple" style="--ripple-color: rgba(255, 0, 0, 0.8);">Click Me!</button>`}</pre>
@@ -36,9 +45,15 @@ TODO: package
 		<button class="ripple" style="--ripple-color: rgba(255, 0, 0, 0.8);">Click Me!</button>
 	</div>
 </div>
-<p>You can also simply the CSS directly. e.g.</p>
-<pre>{`.ripple-object {
-	background-color: green
+<p>You can also modify the CSS directly. e.g.</p>
+<pre>{`.ripple > .ripple-object {
+    background-color: red;
+}
+.ripple-light > .ripple-object {
+    background-color: blue;
+}
+.ripple-dark > .ripple-object {
+    background-color: green;
 }`}</pre>
 
 <style>

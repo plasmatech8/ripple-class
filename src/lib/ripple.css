@@ -11,6 +11,9 @@
 	animation: ripple 600ms linear;
 	background-color: var(--ripple-color);
 }
+.ripple-light > .ripple-object {
+	background-color: var(--ripple-light);
+}
 .ripple-dark > .ripple-object {
 	background-color: var(--ripple-dark);
 }
