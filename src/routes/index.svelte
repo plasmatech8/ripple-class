@@ -26,13 +26,17 @@
 
 <h2>Custom</h2>
 <p>Make a custom ripple color by using the <code>--ripple-color</code> CSS variable.</p>
-<p>Below is a red ripple with 50% transparency.</p>
+<p>Below is a red ripple that starts with 50% transparency.</p>
 <div class="example">
 	<pre>{`<button class="ripple" style="--ripple-color: rgba(255, 0, 0, 0.8);">Click Me!</button>`}</pre>
 	<div class="center">
 		<button class="ripple" style="--ripple-color: rgba(255, 0, 0, 0.8);">Click Me!</button>
 	</div>
 </div>
+<p>You can also simply the CSS directly. e.g.</p>
+<pre>{`.ripple-object {
+	background-color: green
+}`}</pre>
 
 <style>
 	/* Heading */
