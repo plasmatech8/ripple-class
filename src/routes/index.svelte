@@ -1,2 +1,98 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1>Ripple Class Demo</h1>
+
+<h2>Default</h2>
+<div class="example">
+	<pre>{`<button class="ripple">Click Me!</button>`}</pre>
+	<div class="center"><button>Click Me!</button></div>
+</div>
+
+<h2>Colored</h2>
+<div class="example">
+	<pre>{`<button class="ripple">Click Me!</button>`}</pre>
+	<div class="center"><button>Click Me!</button></div>
+</div>
+
+<style>
+	/* Heading */
+	h1,
+	h2 {
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	/* Code Snippet */
+	pre {
+		background: #f4f4f4;
+		border: 1px solid #ddd;
+		border-left: 3px solid #f36d33;
+		color: #666;
+		page-break-inside: avoid;
+		font-family: monospace;
+		font-size: 15px;
+		line-height: 1.6;
+		margin-bottom: 1.6em;
+		max-width: 100%;
+		overflow: auto;
+		padding: 1em 1.5em;
+		display: block;
+		word-wrap: break-word;
+	}
+
+	/* Buttons */
+	button {
+		align-items: center;
+		background-color: #ffffff;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		border-radius: 0.25rem;
+		box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+		box-sizing: border-box;
+		color: rgba(0, 0, 0, 0.85);
+		cursor: pointer;
+		display: inline-flex;
+		font-family: system-ui, -apple-system, system-ui, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+		font-size: 16px;
+		font-weight: 600;
+		justify-content: center;
+		line-height: 1.25;
+		margin: 0;
+		min-height: 3rem;
+		padding: calc(0.875rem - 1px) calc(1.5rem - 1px);
+		position: relative;
+		text-decoration: none;
+		transition: all 250ms;
+		user-select: none;
+		-webkit-user-select: none;
+		touch-action: manipulation;
+		vertical-align: baseline;
+		width: auto;
+	}
+	button:hover,
+	button:focus {
+		border-color: rgba(0, 0, 0, 0.15);
+		box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+		color: rgba(0, 0, 0, 0.65);
+	}
+	button:hover {
+		transform: translateY(-1px);
+	}
+	button:active {
+		background-color: #f0f0f1;
+		border-color: rgba(0, 0, 0, 0.15);
+		box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+		color: rgba(0, 0, 0, 0.65);
+		transform: translateY(0);
+	}
+
+	/* Example Area */
+	.example {
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: 50% 50%;
+	}
+	.example > * {
+		flex: 1;
+	}
+	.center {
+		display: grid;
+		place-items: center;
+	}
+</style>
