@@ -13,9 +13,9 @@ export function rippleEffect(event: MouseEvent) {
 	circle.style.width = circle.style.height = `${diameter}px`;
 	circle.style.left = `${event.clientX - (btn.offsetLeft + radius)}px`;
 	circle.style.top = `${event.clientY - (btn.offsetTop + radius)}px`;
-	circle.classList.add('ripple');
+	circle.classList.add('ripple-object');
 
-	const ripple = btn.getElementsByClassName('ripple')[0];
+	const ripple = btn.getElementsByClassName('ripple-object')[0];
 	if (ripple) {
 		ripple.remove();
 	}
@@ -25,6 +25,5 @@ export function rippleEffect(event: MouseEvent) {
 // Add ripples
 const btns = document.querySelectorAll('.ripple');
 btns.forEach((b) => {
-	console.log(b);
 	b.addEventListener('click', (event) => rippleEffect(event as MouseEvent));
 });

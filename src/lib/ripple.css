@@ -1,9 +1,18 @@
-span.ripple {
+:root {
+	--ripple-light: rgba(255, 255, 255, 0.3);
+	--ripple-dark: rgba(0, 0, 0, 0.3);
+	--ripple-color: var(--ripple-light);
+}
+
+.ripple > .ripple-object {
 	position: absolute;
 	border-radius: 50%;
 	transform: scale(0);
 	animation: ripple 600ms linear;
-	background-color: rgba(255, 255, 255, 0.3);
+	background-color: var(--ripple-color);
+}
+.ripple-dark > .ripple-object {
+	background-color: var(--ripple-dark);
 }
 @keyframes ripple {
 	to {
