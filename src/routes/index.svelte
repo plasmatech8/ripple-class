@@ -6,8 +6,11 @@
 <h1>Ripple Class Demo</h1>
 
 <h2>Setup</h2>
-<p>Import the ripple library.</p>
-<pre>{`import "ripple-class";`}</pre>
+TODO: package
+<strike>
+	<p>Import the ripple library.</p>
+	<pre>{`import "ripple-class";`}</pre>
+</strike>
 
 <h2>White</h2>
 <p>The default ripple is white.</p>
