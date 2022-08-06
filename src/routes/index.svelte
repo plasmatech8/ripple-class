@@ -9,17 +9,29 @@
 <p>Import the ripple library.</p>
 <pre>{`import "ripple-class";`}</pre>
 
-<h2>Default</h2>
+<h2>White</h2>
 <p>The default ripple is white.</p>
 <div class="example">
 	<pre>{`<button class="ripple">Click Me!</button>`}</pre>
 	<div class="center"><button class="ripple">Click Me!</button></div>
 </div>
 
-<h2>Colored</h2>
+<h2>Dark</h2>
 <div class="example">
-	<pre>{`<button class="ripple">Click Me!</button>`}</pre>
-	<div class="center"><button class="ripple">Click Me!</button></div>
+	<pre>{`<button class="ripple ripple-dark">Click Me!</button>`}</pre>
+	<div class="center">
+		<button class="ripple ripple-dark">Click Me!</button>
+	</div>
+</div>
+
+<h2>Custom</h2>
+<p>Make a custom ripple color by using the <code>--ripple-color</code> CSS variable.</p>
+<p>Below is a red ripple with 50% transparency.</p>
+<div class="example">
+	<pre>{`<button class="ripple" style="--ripple-color: rgba(255, 0, 0, 0.8);">Click Me!</button>`}</pre>
+	<div class="center">
+		<button class="ripple" style="--ripple-color: rgba(255, 0, 0, 0.8);">Click Me!</button>
+	</div>
 </div>
 
 <style>
@@ -44,6 +56,14 @@
 		padding: 1em 1.5em;
 		display: block;
 		word-wrap: break-word;
+	}
+	code {
+		background: #f4f4f4;
+		border: 1px solid #ddd;
+		color: #666;
+		page-break-inside: avoid;
+		font-family: monospace;
+		font-size: 15px;
 	}
 
 	/* Buttons */
@@ -80,7 +100,7 @@
 	.example {
 		display: grid;
 		gap: 1rem;
-		grid-template-columns: 50% 50%;
+		grid-template-columns: 65% 35%;
 	}
 	.example > * {
 		flex: 1;
