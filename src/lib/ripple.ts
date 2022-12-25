@@ -21,7 +21,7 @@ export function rippleEffect(event: MouseEvent) {
 }
 
 // Add ripples
-const btns = document.querySelectorAll('.ripple');
-btns.forEach((b) => {
-	b.addEventListener('click', (event) => rippleEffect(event as MouseEvent));
-});
+if (typeof document !== 'undefined') {
+	const btns = document.querySelectorAll('.ripple');
+	btns.forEach((b) => b.addEventListener('click', (event) => rippleEffect(event as MouseEvent)));
+}
