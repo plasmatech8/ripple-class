@@ -14,12 +14,10 @@ export function rippleEffect(event: MouseEvent) {
 	circle.style.left = `${event.pageX - (btn.offsetLeft + radius)}px`;
 	circle.style.top = `${event.pageY - (btn.offsetTop + radius)}px`;
 	circle.classList.add('ripple-object');
-
-	const ripple = btn.getElementsByClassName('ripple-object')[0];
-	if (ripple) {
-		ripple.remove();
-	}
 	btn.appendChild(circle);
+
+	const duration = parseInt(getComputedStyle(circle).getPropertyValue('--ripple-duration'));
+	setTimeout(() => circle.remove(), duration);
 }
 
 // Add ripples
