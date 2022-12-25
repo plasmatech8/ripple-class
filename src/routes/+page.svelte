@@ -35,22 +35,22 @@
 
 <h2>Setup</h2>
 <p>Install the package.</p>
-<pre><code>{@html installCode}</code></pre>
+<pre class="ripple"><code>{@html installCode}</code></pre>
 <p>Import the ripple library.</p>
-<pre><code>{@html importCode}</code></pre>
+<pre class="ripple"><code>{@html importCode}</code></pre>
 
 <h2>Usage</h2>
 <p>
 	Add a ripple to a html element by adding the "ripple" class name. By default, ripple color is
 	white with 60% opacity over a 600ms duration.
 </p>
-<pre><code>{@html buttonCode}</code></pre>
+<pre class="ripple"><code>{@html buttonCode}</code></pre>
 <button class="ripple">Click Me!</button>
 
 <h2>Change Color and Duration</h2>
 <p>You can change the ripple color and duration by changing the CSS variables.</p>
-<pre><code>{@html cssCode}</code></pre>
-<pre><code>{@html buttonCustomCode}</code></pre>
+<pre class="ripple"><code>{@html cssCode}</code></pre>
+<pre class="ripple"><code>{@html buttonCustomCode}</code></pre>
 <button class="ripple custom-ripple">Click Me!</button>
 
 <style>
