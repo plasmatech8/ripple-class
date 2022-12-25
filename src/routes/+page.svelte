@@ -7,15 +7,16 @@
 	if (browser) hljs.highlightAll();
 	const installCode = hljs.highlight('bash', `*package does not exist*`).value;
 	const importCode = hljs.highlight('typescript', `import "ripple-class";`).value;
-	const cssCode = hljs.highlight(
+	let customCssCode = hljs.highlight(
 		'css',
 		`.custom-ripple {
-    --ripple-color: rgba(255, 0, 0, 0.8);
-    --ripple-duration: 1200ms;
+    --ripple-color: rgba(255, 0, 0, 0.8);     /* Default: rgba(255, 255, 255, 0.6) */
+    --ripple-duration: 1200ms;                 /* Default: 600ms */
+    --ripple-scale: 1;                                /* Default: 4 */
 }`
 	).value;
 	const buttonCode = hljs.highlight('html', `<button class="ripple">Click Me!</button>`).value;
-	const buttonCustomCode = hljs.highlight(
+	const customButtonCode = hljs.highlight(
 		'html',
 		`<button class="ripple custom-ripple">Click Me!</button>`
 	).value;
@@ -40,17 +41,14 @@
 <pre class="ripple"><code>{@html importCode}</code></pre>
 
 <h2>Usage</h2>
-<p>
-	Add a ripple to a html element by adding the "ripple" class name. By default, ripple color is
-	white with 60% opacity over a 600ms duration.
-</p>
+<p>Add a ripple to a html element by adding the "ripple" class name.</p>
 <pre class="ripple"><code>{@html buttonCode}</code></pre>
 <button class="ripple">Click Me!</button>
 
-<h2>Change Color and Duration</h2>
-<p>You can change the ripple color and duration by changing the CSS variables.</p>
-<pre class="ripple"><code>{@html cssCode}</code></pre>
-<pre class="ripple"><code>{@html buttonCustomCode}</code></pre>
+<h2>Customization</h2>
+<p>You can use the CSS variables to change the ripple color, duration and scale.</p>
+<pre class="ripple custom-ripple"><code>{@html customCssCode}</code></pre>
+<pre class="ripple custom-ripple"><code>{@html customButtonCode}</code></pre>
 <button class="ripple custom-ripple">Click Me!</button>
 
 <style>
@@ -98,6 +96,7 @@
 	.custom-ripple {
 		--ripple-color: rgba(255, 0, 0, 0.8);
 		--ripple-duration: 1200ms;
+		--ripple-scale: 1;
 	}
 	.header {
 		display: flex;

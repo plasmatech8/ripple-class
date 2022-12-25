@@ -3,7 +3,7 @@
 </script>
 
 <div style="position: absolute; top: 300px; left: 50px;">
-	<button class="ripple custom-ripple" style="height: 200px; width: 200px">Click Me!</button>
+	<button class="ripple custom-ripple" style="height: 600px; width: 200px">Click Me!</button>
 </div>
 <div
 	class="ripple"
@@ -55,5 +55,6 @@
 	.custom-ripple {
 		--ripple-color: rgba(255, 0, 0, 0.8);
 		--ripple-duration: 1200ms;
+		--ripple-scale: 1;
 	}
 </style>

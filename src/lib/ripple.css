@@ -1,6 +1,7 @@
 :root {
 	--ripple-color: rgba(255, 255, 255, 0.6);
 	--ripple-duration: 600ms;
+	--ripple-scale: 4;
 }
 
 .ripple {
@@ -19,7 +20,7 @@
 
 @keyframes ripple {
 	to {
-		transform: scale(4);
+		transform: scale(var(--ripple-scale));
 		opacity: 0;
 	}
 }
