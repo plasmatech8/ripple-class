@@ -1,14 +1,15 @@
 :root {
-	--ripple-light: rgba(255, 255, 255, 0.4);
+	--ripple-light: rgba(255, 255, 255, 0.6);
 	--ripple-dark: rgba(0, 0, 0, 0.4);
 	--ripple-color: var(--ripple-light);
+	--ripple-duration: 600ms;
 }
 
 .ripple > .ripple-object {
 	position: absolute;
 	border-radius: 50%;
 	transform: scale(0);
-	animation: ripple 600ms linear;
+	animation: ripple var(--ripple-duration) linear;
 	background-color: var(--ripple-color);
 }
 .ripple-light > .ripple-object {
