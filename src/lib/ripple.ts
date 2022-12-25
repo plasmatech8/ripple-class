@@ -1,7 +1,7 @@
 /**
  * Logic to add material ripple to a HTML element.
  * Modified from https://codepen.io/vituja1/pen/oNWzNwq.
- * @param event Event object for click.
+ * @param event Event object for click an a ripple target.
  */
 export function rippleEffect(event: MouseEvent) {
 	const btn = event.currentTarget as HTMLElement;
