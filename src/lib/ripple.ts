@@ -1,6 +1,6 @@
 /**
  * Logic to add material ripple to a HTML element.
- * Copied from https://codepen.io/vituja1/pen/oNWzNwq.
+ * Modified from https://codepen.io/vituja1/pen/oNWzNwq.
  * @param event Event object for click.
  */
 export function rippleEffect(event: MouseEvent) {
