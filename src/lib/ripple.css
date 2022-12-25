@@ -3,12 +3,18 @@
 	--ripple-duration: 600ms;
 }
 
+.ripple {
+	position: relative;
+	overflow: hidden;
+}
+
 .ripple-object {
 	position: absolute;
 	border-radius: 50%;
 	transform: scale(0);
 	animation: ripple var(--ripple-duration) linear;
 	background-color: var(--ripple-color);
+	pointer-events: none;
 }
 
 @keyframes ripple {

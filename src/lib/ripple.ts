@@ -11,8 +11,9 @@ export function rippleEffect(event: MouseEvent) {
 	const radius = diameter / 2;
 
 	circle.style.width = circle.style.height = `${diameter}px`;
-	circle.style.left = `${event.pageX - (btn.offsetLeft + radius)}px`;
-	circle.style.top = `${event.pageY - (btn.offsetTop + radius)}px`;
+	const clientRect = btn.getBoundingClientRect();
+	circle.style.left = `${event.clientX - clientRect.left + btn.scrollLeft - radius}px`;
+	circle.style.top = `${event.clientY - clientRect.top + btn.scrollTop - radius}px`;
 	circle.classList.add('ripple-object');
 	btn.appendChild(circle);
 
