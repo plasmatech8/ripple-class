@@ -1,6 +1,8 @@
 # ripple-class
 
-Add a simple material ripple to a HTML element by adding a `.ripple` class.
+[![npm version](https://badge.fury.io/js/ripple-class.svg)](https://badge.fury.io/js/ripple-class)
+
+Add a material ripple by adding a `.ripple` class to any HTML element.
 
 [See the demo](https://ripple-class.pages.dev/)
 
@@ -21,7 +23,7 @@ import "ripple-class";
 
 ## Usage
 
-Add a ripple to a html element by adding the "ripple" class name.
+Add a ripple listener to a HTML element by adding the `ripple` class name.
 ```html
 <button class="ripple">Click Me!</button>
 ```
@@ -42,13 +44,11 @@ You can use the CSS variables to change the ripple color, duration and scale.
 
 ## Caveat
 
-The `.ripple` class applies `overflow: hidden` and `position: relative;` to your element.
-Position of the ripple object will be incorrect if position is `static`.
-(If the element is `static`, `transform: translateZ(0);` can also be used to correct the position)
-
-Overflow `hidden` is added to prevent the ripple from overflowing from the parent.
-It is not necessary, and was added for convenience.
-The ripple will still work with any other overflow setting.
+The `.ripple` class applies styles to your element:
+|                             |                                                                                                                                                                                                                                   |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `transform: translateZ(0);` | Applied because the ripple objects are created in the incorrect location when the element is `position: static;`. The ripple objects use absolute positioning which requires either a set `transform` or a non-static `position`. |
+| `overflow: hidden;`         | Applied to prevent the ripple from overflowing from the parent. It is applied for convenience. The ripple will still work with any other overflow setting.                                                                        |
 
 ## Development
 

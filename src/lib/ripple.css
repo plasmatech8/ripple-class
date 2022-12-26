@@ -5,7 +5,7 @@
 }
 
 .ripple {
-	position: relative;
+	transform: translateZ(0);
 	overflow: hidden;
 }
 
