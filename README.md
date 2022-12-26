@@ -47,3 +47,11 @@ Position of the ripple object will be incorrect if position is `static`.
 Overflow `hidden` is added to prevent the ripple from overflowing from the parent.
 It is not necessary, and was added for convenience.
 The ripple will still work with any other overflow setting.
+
+## Development
+
+Package and website is developed using SvelteKit.
+
+Code is located under [src/lib](src/lib).
+
+Relevant commands are located in the [package.json](package.json).
