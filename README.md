@@ -56,4 +56,20 @@ Package and website is developed using SvelteKit.
 
 Code is located under [src/lib](https://github.com/plasmatech8/ripple-class/tree/main/src/lib).
 
-Relevant commands are located in the [package.json](https://github.com/plasmatech8/ripple-class/blob/main/package.json).
+Build the package and deploy to NPM:
+```bash
+npm run build:package
+cd package
+npm publish
+```
+
+Run demo website with development server:
+```bash
+npm run dev
+```
+
+Build demo website for production and serve:
+```bash
+npm run build:website
+npm run preview
+```
