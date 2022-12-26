@@ -1,2 +1,2 @@
-import './ripple.ts';
+import './ripple';
 import './ripple.css';
