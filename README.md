@@ -2,6 +2,8 @@
 
 Add a simple material ripple to a HTML element by adding a `.ripple` class.
 
+[See the demo](https://ripple-class.pages.dev/)
+
 ![Example](./img/example.png)
 
 ## Setup
