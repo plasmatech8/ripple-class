@@ -4,14 +4,14 @@ Add a simple material ripple to a HTML element by adding a `.ripple` class.
 
 [See the demo](https://ripple-class.pages.dev/)
 
-![Example](./img/example.png)
+![](./img/example.png)
 
 ## Setup
 
 Install the package.
 
 ```bash
-*package does not exist*
+npm install ripple-class
 ```
 
 Import the ripple library.
