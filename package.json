@@ -1,6 +1,6 @@
 {
 	"name": "ripple-class",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"scripts": {
 		"dev": "vite dev",
 		"build:package": "svelte-kit sync && svelte-package",
