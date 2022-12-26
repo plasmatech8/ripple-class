@@ -54,6 +54,7 @@
 <style>
 	:root {
 		background-color: gainsboro;
+		padding: 0 1rem;
 	}
 	* {
 		font-family: Arial, Helvetica, sans-serif;
