@@ -45,7 +45,7 @@ You can use the CSS variables to change the ripple color, duration and scale.
 ## Caveat
 
 The `.ripple` class applies styles to your element:
-|                             |                                                                                                                                                                                                                                   |
+| Style                       | Purpose                                                                                                                                                                                                                           |
 | --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `transform: translateZ(0);` | Applied because the ripple objects are created in the incorrect location when the element is `position: static;`. The ripple objects use absolute positioning which requires either a set `transform` or a non-static `position`. |
 | `overflow: hidden;`         | Applied to prevent the ripple from overflowing from the parent. It is applied for convenience. The ripple will still work with any other overflow setting.                                                                        |
