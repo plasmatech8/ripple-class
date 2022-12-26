@@ -4,7 +4,7 @@ Add a simple material ripple to a HTML element by adding a `.ripple` class.
 
 [See the demo](https://ripple-class.pages.dev/)
 
-![](./img/example.png)
+![](https://raw.githubusercontent.com/plasmatech8/ripple-class/main/img/example.png)
 
 ## Setup
 
@@ -54,6 +54,6 @@ The ripple will still work with any other overflow setting.
 
 Package and website is developed using SvelteKit.
 
-Code is located under [src/lib](src/lib).
+Code is located under [src/lib](https://github.com/plasmatech8/ripple-class/tree/main/src/lib).
 
-Relevant commands are located in the [package.json](package.json).
+Relevant commands are located in the [package.json](https://github.com/plasmatech8/ripple-class/blob/main/package.json).
