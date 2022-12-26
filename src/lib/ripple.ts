@@ -1,3 +1,5 @@
+import parse from 'parse-duration';
+
 /**
  * Logic to add material ripple to a HTML element.
  * Modified from https://codepen.io/vituja1/pen/oNWzNwq.
@@ -17,8 +19,8 @@ export function rippleEffect(event: MouseEvent) {
 	circle.classList.add('ripple-object');
 	btn.appendChild(circle);
 
-	const duration = parseInt(getComputedStyle(circle).getPropertyValue('--ripple-duration'));
-	setTimeout(() => circle.remove(), duration);
+	const duration = getComputedStyle(circle).getPropertyValue('--ripple-duration');
+	setTimeout(() => circle.remove(), parse(duration));
 }
 
 // Add ripples
