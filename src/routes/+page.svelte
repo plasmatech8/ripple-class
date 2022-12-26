@@ -2,9 +2,7 @@
 	import hljs from 'highlight.js';
 	import 'highlight.js/styles/github-dark.css';
 	import '$lib';
-	import { browser } from '$app/environment';
 
-	if (browser) hljs.highlightAll();
 	const installCode = hljs.highlight('bash', `npm install ripple-class`).value;
 	const importCode = hljs.highlight('typescript', `import "ripple-class";`).value;
 	let customCssCode = hljs.highlight(
