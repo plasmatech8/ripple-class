@@ -21,6 +21,8 @@ Import the ripple library.
 import "ripple-class";
 ```
 
+> If module imports do not work, try the dynamic import function: `import('ripple-class')`
+
 ## Usage
 
 Add a ripple listener to a HTML element by adding the `ripple` class name.
