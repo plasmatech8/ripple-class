@@ -1,9 +1,9 @@
 import parse from 'parse-duration';
 
 /**
- * Logic to add material ripple to a HTML element.
+ * Add a material ripple onto a HTML element.
  * Modified from https://codepen.io/vituja1/pen/oNWzNwq.
- * @param event Event object for click an a ripple target.
+ * @param event MouseEvent object for click on a ripple target.
  */
 export function rippleEffect(event: MouseEvent) {
 	const btn = event.currentTarget as HTMLElement;
