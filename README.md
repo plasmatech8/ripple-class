@@ -1,12 +1,12 @@
-# ripple-class
-
-[![npm version](https://badge.fury.io/js/ripple-class.svg)](https://badge.fury.io/js/ripple-class)
+# ripple-class · [![npm version](https://badge.fury.io/js/ripple-class.svg?1)](https://badge.fury.io/js/ripple-class)
 
 Add a material ripple by adding a `.ripple` class to any HTML element.
 
 [See the demo](https://ripple-class.pages.dev/)
 
 ![](https://raw.githubusercontent.com/plasmatech8/ripple-class/main/img/example.png)
+
+Works great with TailwindCSS.
 
 ## Setup
 
@@ -30,6 +30,8 @@ Add a ripple listener to a HTML element by adding the `ripple` class name.
 <button class="ripple">Click Me!</button>
 ```
 
+![](img/default_ripple_demo.gif)
+
 ## Customization
 
 You can use the CSS variables to change the ripple color, duration and scale.
@@ -44,26 +46,21 @@ You can use the CSS variables to change the ripple color, duration and scale.
 <button class="ripple custom-ripple">Click Me!</button>
 ```
 
+![](img/custom_ripple_demo.gif)
+
 ## Caveat
 
-The `.ripple` class applies styles to your element:
-| Style                       | Purpose                                                                                                                                                                                                                           |
-| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `transform: translateZ(0);` | Applied because the ripple objects are created in the incorrect location when the element is `position: static;`. The ripple objects use absolute positioning which requires either a set `transform` or a non-static `position`. |
-| `overflow: hidden;`         | Applied to prevent the ripple from overflowing from the parent. It is applied for convenience. The ripple will still work with any other overflow setting.                                                                        |
+The `.ripple` class applies the following styles to your element:
+| Style                       | Purpose                                                                                                                                                                                                                                                              |
+| --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `transform: translateZ(0);` | Applied because the ripple objects use absolute positioning which requires either a set `transform` or a non-static `position`. Otherwise, when the element is `position: static;`, the ripple object will be created at incorrect coordinates (outside the target). |
+| `overflow: hidden;`         | Applied to prevent the ripple from overflowing from the parent. This is applied for convenience. The ripple will still work with any other overflow setting but may come with side-effects.                                                                          |
 
 ## Development
 
 Package and website is developed using SvelteKit.
 
-Code is located under [src/lib](https://github.com/plasmatech8/ripple-class/tree/main/src/lib).
-
-Build the package and deploy to NPM:
-```bash
-npm run build:package
-cd package
-npm publish
-```
+Package code is located under [src/lib](https://github.com/plasmatech8/ripple-class/tree/main/src/lib).
 
 Run demo website with development server:
 ```bash
@@ -74,4 +71,11 @@ Build demo website for production and serve:
 ```bash
 npm run build:website
 npm run preview
+```
+
+Build the package and deploy to NPM:
+```bash
+npm run build:package
+cd package
+npm publish
 ```

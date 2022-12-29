@@ -1,6 +1,8 @@
 {
 	"name": "ripple-class",
-	"version": "1.0.5",
+	"version": "1.0.6",
+	"description": "Add a material ripple by adding a .ripple class to any HTML element.",
+	"license": "MIT",
 	"scripts": {
 		"dev": "vite dev",
 		"build:package": "svelte-kit sync && svelte-package",
