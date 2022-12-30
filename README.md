@@ -76,6 +76,5 @@ npm run preview
 Build the package and deploy to NPM:
 ```bash
 npm run build:package
-cd package
-npm publish
+npm publish ./package
 ```
