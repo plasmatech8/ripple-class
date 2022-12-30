@@ -1,6 +1,6 @@
 {
 	"name": "ripple-class",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "Add a material ripple by adding a .ripple class to any HTML element.",
 	"license": "MIT",
 	"scripts": {
