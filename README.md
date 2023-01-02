@@ -1,6 +1,6 @@
 # ripple-class · [![npm version](https://badge.fury.io/js/ripple-class.svg?1)](https://badge.fury.io/js/ripple-class)
 
-Add a material ripple by adding a `.ripple` class to any HTML element.
+Add a material ripple effect by adding a `.ripple` class to any HTML element.
 
 [See the demo](https://ripple-class.pages.dev/)
 
@@ -55,6 +55,8 @@ The `.ripple` class applies the following styles to your element:
 | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `transform: translateZ(0);` | Applied because the ripple objects use absolute positioning which requires either a set `transform` or a non-static `position`. Otherwise, when the element is `position: static;`, the ripple object will be created at incorrect coordinates (outside the target). |
 | `overflow: hidden;`         | Applied to prevent the ripple from overflowing from the parent. This is applied for convenience. The ripple will still work with any other overflow setting but may come with side-effects.                                                                          |
+
+The ripple target also needs to be either a block or inline-block display element.
 
 ## Development
 

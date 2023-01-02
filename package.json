@@ -1,7 +1,7 @@
 {
 	"name": "ripple-class",
-	"version": "1.0.7",
-	"description": "Add a material ripple by adding a .ripple class to any HTML element.",
+	"version": "1.0.8",
+	"description": "Add a material ripple effect by adding a .ripple class to any HTML element.",
 	"license": "MIT",
 	"scripts": {
 		"dev": "vite dev",
@@ -45,6 +45,8 @@
 	"keywords": [
 		"ripple",
 		"class",
-		"material"
+		"material",
+		"ripple effect",
+		"classname"
 	]
 }
